@@ -1,0 +1,35 @@
+.Ad::-webkit-scrollbar {
+    display: none;
+}
+
+
+.Ad{
+    animation: scroll-left 10s  linear infinite;
+}
+ 
+.adsm{
+  animation: scroll-left-sm 10s  ease-in-out infinite;
+}
+
+@keyframes scroll-left {
+    from {
+      transform: translateX(5%); /* Start from the right */
+    }
+    to {
+      transform: translateX(-20%); /* Move to the left */
+    }
+  }
+
+
+  
+
+
+
+@keyframes scroll-left-sm {
+  from {
+    transform: translateX(5%); /* Start from the right */
+  }
+  to {
+    transform: translateX(-150%); /* Move to the left */
+  }
+}
