@@ -20,7 +20,7 @@ const Order = ({userorders}) => {
               <div className={`flex w-full p-4 border-2 rounded-lg border-green-800 justify-between items-center font-semibold text-lg`}>
                 <h2>{item.date}</h2>
                 <h2>Rupees:{item.amount}</h2>
-                <h2 className={` text-white p-1 rounded-lg  ${item.status == 'Order Taken'?'bg-red-600':item.status==="Delivered"?'bg-green-800':'bg-orange-600'}`}>{item.status}</h2>
+                <h2 className={` text-white p-1 rounded-lg  ${item.status === 'Order Taken'?'bg-red-600':item.status==="Delivered"?'bg-green-800':'bg-orange-600'}`}>{item.status}</h2>
                 <button className='bg-green-800 text-white font-semibold p-2 rounded-lg'>Veiw Details</button>
               </div>
             ))

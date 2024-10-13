@@ -27,7 +27,8 @@ function App() {
   const [profileveiw,setProfileveiw] = useState(false);
   
 
-  const api = ' http://192.168.198.196:3500';
+  const api = process.env.REACT_APP_API;
+  console.log(api);
 
 
   
